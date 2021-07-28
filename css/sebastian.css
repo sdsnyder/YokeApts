@@ -1,0 +1,189 @@
+/* Sebastian's CSS file */
+
+/* INDEX */
+.slideshow{
+    overflow:hidden;
+    width: 894px;
+    height: 670px;
+    font-size: 0;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.slidefade{
+    width: 894px;
+    height: 670px;
+    animation: move 10s ease-in-out 4s infinite alternate; 
+    display: inline-block;
+}
+.txt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #F4CDD4;
+}
+.slideshow h3{
+    text-align: center;
+    font-size: 22px;
+    color: #861A22;
+}
+.slideshow p{
+    text-align: center;
+    font-size: 18px;
+    color:#861A22;
+}
+@keyframes move {
+    0%,20% { transform: translateX(0); }
+    30%,45% { transform: translateX(-889px); }
+    55%,70% { transform: translateX(-1788px); }
+    80%,100% { transform: translateX(-2667px); }
+}
+h2{
+    text-align: center;
+}
+.hometext{
+    text-align: center;
+    text-decoration: none;
+}
+.hometext a{
+    text-decoration: none;
+    color:#861A22;
+}
+.dailytreats{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    height:100%;
+}
+
+/* ADMINISTRATION */
+
+/* Places login page at center of page with border*/
+.admina{
+    border: #861A22 solid 3px;
+    padding: 15px 15px 15px 15px;
+    display:table;
+    height:100%;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 14pt;
+}
+.adminb{
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+}
+
+/* Sets position of button*/
+.loginbutton{
+    background-color:#861A22;
+    color: white;
+    border-radius: 3px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom:2%;
+    margin-left: 80%;
+    border: none;
+}
+.loginbutton:hover{
+    background-color: white;
+    color:#861A22;
+}
+
+.adminlogin{
+    padding-top: 80px;
+    text-align: center;
+    text-decoration: none;
+    color:#861A22;
+}
+
+
+/* resolution CSS */
+.containa{
+    border: 5px solid #861A22;
+    padding: 30px;
+    display:table;
+    height:100%;
+    width: 400px;
+    margin: 0 auto;
+}
+.containb{
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+}
+.containc{
+    float:right;
+    clear:left;
+}
+.f1{
+    background-color: #861A22;
+    color: #F4CDD4;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+.f1:hover{
+    background-color: #F4CDD4;
+    color:#861A22;
+    border:#861A22 1px solid;
+  }
+  #servtickets{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#servtickets td, #servtickets th {
+    border: 1px solid #861A22;
+    padding: 8px;
+}
+#servtickets tr{
+    background-color: white;
+}
+#servtickets tr:hover {
+    background-color: #F4CDD4;
+}
+#servtickets th { /*Headers*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #861A22;
+    color: #F4CDD4;
+  }
+
+  #comps{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  #comps td, #comps th {
+    border: 1px solid #861A22;
+    padding: 8px;
+}
+  #comps tr{
+    background-color: white;
+}
+  #comps tr:hover {
+    background-color: #F4CDD4;
+}
+  #comps th { /*Headers*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #861A22;
+    color: #F4CDD4;
+  }
+
+.adminreg{
+    text-align: center;
+    padding:10px;
+    text-decoration: none;
+    background-color: #861A22;
+    color:#F4CDD4;
+    margin-left: 48%;
+}
+.adminreg:hover{
+    color:#861A22;
+    background-color: white;
+}

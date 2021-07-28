@@ -1,0 +1,124 @@
+/*
+all CSS files will be consolidated to this file 
+Exact color values subject to change following color proofing
+Pantone 7422 C (#F4CDD4)
+white
+RAL 3003 	(#861A22)
+
+*/
+
+
+/* element formatting -------------------------------------------------- */
+body{
+    background-color: #F4CDD4;
+    background-position: center;
+    align-content: center;
+    font-size: 18pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    color:#861A22;
+}
+footer{
+    text-align: right;
+    font-family: monospace;
+    font-size: 10pt;
+    color:#861A22;
+    position: relative;
+    bottom: 0;
+    padding-top: 30px;
+}
+/* Classes ------------------------------------------------------------- */
+
+/* Places h1 with class "pgtitle" on center with accent background*/
+.pgtitle{
+    text-align: center;
+    font-size: 24pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #861A22;
+    color: #F4CDD4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.menuguide{ /* Navigation Bar -------- */
+    background-color: #F4CDD4;
+    font-size: 20pt;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: monospace;
+}
+.guidebutton{ /* Navigation buttons */
+    width: 300px;
+    background-color: #F4CDD4;
+    color: #861A22;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:25px;
+    font-family: monospace;
+    font-size: 20pt;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    display:inline-block;
+}
+.guidebutton:hover{ /* changes navigation button color when hovered over */
+    background-color: white;
+    color: #F4CDD4;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.dropdown{ /* positioning for dropdown menus */
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropcontent{ /* reveals menu when hovering with cursor */
+    display:block;
+}
+.dropdown:hover .dropbutton{ /* highlights drop down button underneath cursor*/
+    background-color: white;
+    color:#F4CDD4;
+}
+.dropbutton{ /* styling of navigation button with drop down menu */
+    width: 300px;
+    background-color: #F4CDD4;
+    color: #861A22;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:25px;
+    border:none;
+    font-family: monospace;
+    font-size: 20pt;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    display:inline-block;
+}
+.dropcontent{ /* styling of dropdown menu */
+    display: none;
+    position:absolute;
+    background-color:white;
+    color:#861A22;
+    min-width: 300px;
+    z-index: 1;
+    text-decoration: none;
+}
+.dropcontent a{ /* styling of dropdown links */
+    color:#861A22;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.return{ 
+    background-color:#861A22;
+    color: white;
+    padding: 15px; 
+    text-decoration: none;
+    float: right;
+}
+.return:hover{
+    background-color: white;
+    color:#861A22;
+}

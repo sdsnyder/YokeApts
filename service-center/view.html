@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>View Your Tickets</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/joe.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <a class = "return" href="../indexANDadmin/index.html">Logout</a>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+			
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+			
+            <!-- 
+                THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+                USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+                <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+            -->           
+                <div class="menuguide">
+                    <a href="../indexANDadmin/userindex.html" class="guidebutton">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropbutton">Service Center</button>
+                        <div class="dropcontent">
+                            <a href="service-center.html">Service Home</a>
+                            <a href="create.html">Create a Ticket</a>
+                            <a href="view.html">View a Ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbutton">Complaints</button>
+                        <div class="dropcontent">
+                            <a href="../complaints/complaints.html">Complaints Home</a>
+                            <a href="../complaints/file.html">File a Complaint</a>
+                            <a href="../complaints/view.php">View Complaints</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropbutton">About</button>
+                        <div class="dropcontent">
+                            <a href="../userabout/about.html">Apartment History</a>
+                            <a href="../userabout/location.html">Location</a>
+                            <a href="../userabout/services.html">Services We Offer</a>
+                            <a href="../userabout/developmentteam.html">Development Team</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- END OF NAVIGATION BAR-->
+        <h1 class="pgtitle">View Service Tickets</h1>
+		<div class="centerBox">
+		<p> Please enter your username in order to view the status of tickets</p>
+        <form action="viewticket.php" method="POST">
+            <label id="labeljoe">Username: <input type="text" name="usr"/></label><br/>
+            <div class="clearfix">
+            <input type="submit" value="Submit Ticket"/>
+        </form>
+
+		</div>
+		</div>
+
+        <footer>
+			<img class="donut" src="../assets/promo/monpastry_rescale.png" alt="donut" width="200">
+            <p>
+				A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

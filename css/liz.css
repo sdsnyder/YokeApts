@@ -1,0 +1,43 @@
+.address a{ /* styling of address link */
+    text-decoration: underline #861A22;
+    font-size: 20pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #861A22;
+}
+.complexview{
+    overflow:hidden;
+    width: 894px;
+    height: 670px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.serviceslist ul{ /* styling of services list */
+	padding-left: 10px;
+}
+
+.teammembers h3{ /* styling of development team member names */
+	text-decoration: underline;
+	text-decoration-color: #861A22;
+}
+
+.teamstyle {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.locationspacing {
+	padding-bottom: 5px;
+}
+
+/*location page*/
+.location{
+    display: block;
+	margin: 0 auto;
+	margin-top: -70px;
+	margin-bottom: -120px;
+}
+
+.locationtext {
+	text-align: center;
+}

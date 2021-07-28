@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Account Services</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+			
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+
+        <!-- 
+            THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+            USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+            <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+         -->           
+        <div class="menuguide">
+            <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbutton">Administration</button>
+                <div class="dropcontent">
+                    <a href="../indexANDadmin/admin.html">Admin Login</a>
+                    <a href="../admin/register.html">Admin Register</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Account Services</button>
+                <div class="dropcontent">
+                    <a href="account-services.html">Account Services</a>
+                    <a href="create.html">Create an Account</a>
+                    <a href="myaccount.html">My Account</a>
+                </div>
+            </div>
+                    
+            <div class="dropdown">
+                <button class="dropbutton">About</button>
+                <div class="dropcontent">
+                    <a href="../about/about.html">Apartment History</a>
+                    <a href="../about/location.html">Location</a>
+                    <a href="../about/services.html">Services We Offer</a>
+                    <a href="../about/developmentteam.html">Development Team</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR-->   
+            
+
+        <h1 class="pgtitle">Account Services</h1>
+        <br/>
+        <div style ="position:relative">
+        <p>
+        Welcome to Yoke Apartments! Here in Account Services you will be able to create an account
+        with us for your convenience. This account will help us track any discrepancies with your
+        apartment. Once you create an account, you can easily login using your username and 
+        password. 
+        </p>
+        <p>Registration requirements</p>
+        <ul>
+            <li> There are only 30 apartment units in this complex</li>
+            <li> First Names are limited to 28 letters, if you name exceeds 28 letters, use the first 28.</li>
+            <li> Last Names are limited to 28 letters, if you name exceeds 28 letters, use the first 28.</li>
+            <li> Usernames are limited to 28 letters, if you username exceeds 28 letters, use the first 28.</li>
+            <li> Passwords are limited to 12 letters.</li>
+        </ul>
+        </div>
+        <br/>
+
+        <footer>
+            <img class="donut3" src="../assets/promo/monpastry_rescale.png" alt="donut3" width="200">
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

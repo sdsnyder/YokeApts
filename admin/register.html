@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Administration Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/sebastian.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+        <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+        <script type = "text/javascript" src = "../JS/adminreg.js"></script>
+        
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+		
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+
+        <!-- 
+            THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+            USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+            <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+         -->           
+        <div class="menuguide">
+            <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbutton">Administration</button>
+                <div class="dropcontent">
+                    <a href="../indexANDadmin/admin.html">Admin Login</a>
+                    <a href="register.html">Admin Register</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Account Services</button>
+                <div class="dropcontent">
+                    <a href="../account-services/account-services.html">Account Services</a>
+                    <a href="../account-services/create.html">Create an Account</a>
+                    <a href="../account-services/myaccount.html">My Account</a>
+                </div>
+            </div>
+                    
+            <div class="dropdown">
+                <button class="dropbutton">About</button>
+                <div class="dropcontent">
+                    <a href="../about/about.html">Apartment History</a>
+                    <a href="../about/location.html">Location</a>
+                    <a href="../about/services.html">Services We Offer</a>
+                    <a href="../about/developmentteam.html">Development Team</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR--> 
+        <h1 class="pgtitle">Administration Registration</h1>
+
+        <div class="admina">
+            <div class="adminb">
+
+                  <form action="adminreg.php" method="POST" class="createform" id="regform">
+                  <div class="rw">
+                    <div class="c20">
+                        <label for="username"><b>Username</b></label>
+                    </div>
+
+                    <div class="c80">
+                        <input type="text" id="username" placeholder="Enter Username" name="username"><br>
+                    </div>
+        
+                    <div class="c20">
+                        <label for="pswd"><b>Password</b></label>
+                    </div>
+
+                    <div class="c80">
+                        <input type="password" id="pswd" placeholder="Enter Password" name="pswd"><br>
+                    </div>
+                    <div class="c20">
+                        <label for="code"><b>Secret Code</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="password" id="code" placeholder="Enter Secret Code" name="code"><br> <!--onblur="chkLog3()"-->
+                    </div>
+
+                    <br/>
+                    <input type="submit" value="Register" id="submitbutton" class="loginbutton">
+                  </div>
+                  </form>
+            </div>
+      </div>
+
+        <footer>
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>
+

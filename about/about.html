@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>About Us</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/liz.css" title="style" />
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+        alt="logo" id="logo">
+
+	<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+	
+    <!-- 
+        THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+        USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+        <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+     -->           
+    <div class="menuguide">
+        <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbutton">Administration</button>
+            <div class="dropcontent">
+                <a href="../indexANDadmin/admin.html">Admin Login</a>
+                <a href="../admin/register.html">Admin Register</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Account Services</button>
+            <div class="dropcontent">
+                <a href="../account-services/account-services.html">Account Services</a>
+                <a href="../account-services/create.html">Create an Account</a>
+                <a href="../account-services/myaccount.html">My Account</a>
+            </div>
+        </div>
+                
+        <div class="dropdown">
+            <button class="dropbutton">About</button>
+            <div class="dropcontent">
+                <a href="about.html">Apartment History</a>
+                <a href="location.html">Location</a>
+                <a href="services.html">Services We Offer</a>
+                <a href="developmentteam.html">Development Team</a>
+            </div>
+        </div>
+    </div>
+    <!-- END OF NAVIGATION BAR-->   
+
+        <h1 class="pgtitle">A Brief History</h1>
+        <div class="complexview">
+            <img src="../assets/tour/BUILDING.png" alt="apartment building">
+        </div>
+        
+		    <p> 
+                Yoke Apartments was built in the year of 2017 with the goal of providing affordable, but comfortable
+			    off-campus housing for students attending the University of Maryland, Baltimore County and the Community College 
+			    of Baltimore County, Catonsville. Our apartments are less than a 5 minute drive from both the UMBC and CCBC 
+			    Catonsville campuses so students are close to their school, but are able to experience living on their own.
+            </p>	
+		    <p> 
+                Our apartment complex was designed with a modern and simple style in mind. We have luxury studio apartments 
+			    with lots of open space and natural lighting.
+			    Our amenities include an outdoor swimming pool, firepits, common areas, media rooms, and a fitness center. 
+			    We also have covered parking spaces and guest parking available. 
+            </p>
+		    <p> 
+                If you are a current resident of Yoke Apartments, THANK YOU for choosing us!
+			    If you would like to know more about our apartments, contact us by calling 443-555-1234 or emailing 
+			    yokeapartments@wilkensavenue.com. 
+            </p>
+
+
+        <footer>
+            <img class="donut3" src="../assets/promo/monpastry_rescale.png" alt="donut3" width="200">
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

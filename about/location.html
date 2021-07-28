@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>About Us</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- <link rel="stylesheet" type="text/css" href="../css/liz.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/> 
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+        alt="logo" id="logo">
+		
+	<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+
+    <!-- 
+        THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+        USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+        <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+     -->           
+    <div class="menuguide">
+        <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbutton">Administration</button>
+            <div class="dropcontent">
+                <a href="../indexANDadmin/admin.html">Admin Login</a>
+                <a href="../admin/register.html">Admin Register</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Account Services</button>
+            <div class="dropcontent">
+                <a href="../account-services/account-services.html">Account Services</a>
+                <a href="../account-services/create.html">Create an Account</a>
+                <a href="../account-services/myaccount.html">My Account</a>
+            </div>
+        </div>
+                
+        <div class="dropdown">
+            <button class="dropbutton">About</button>
+            <div class="dropcontent">
+                <a href="about.html">Apartment History</a>
+                <a href="location.html">Location</a>
+                <a href="services.html">Services We Offer</a>
+                <a href="developmentteam.html">Development Team</a>
+            </div>
+        </div>
+    </div>
+    <!-- END OF NAVIGATION BAR-->   
+
+        <h1 class="pgtitle">Apartment Location</h1>
+		
+            <img src="../assets/tour/aptLocation.png" 
+            alt="map" class="location">
+		
+		<div class="locationtext">
+		
+		<div class="locationspacing">
+		
+            <h3 class="address"><a href="https://www.google.com/maps/@39.2558066,-76.7189044,16.27z">1234 Wilkens Avenue, Catonsiville, MD 21228</a></h3>
+		
+		</div>
+		
+            <p>
+                Yoke Apartments is located on Wilkens Avenus in Catonsville, Maryland. Our apartments are less 
+			    than a 5 minute drive from both the UMBC and CCBC Catonsville campuses. 
+            </p>
+        </div>
+
+		</div>
+
+        <footer>
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

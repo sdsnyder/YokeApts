@@ -1,0 +1,139 @@
+<!--
+  Yoke Atelier
+  IS 448 Section 3
+  Landing page for our service ticket web application  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" type="text/css" href="../css/sebastian.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+		
+        <!-- 
+            THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+            USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+            <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+         -->           
+        <div class="menuguide">
+            <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbutton">Administration</button>
+                <div class="dropcontent">
+                    <a href="../indexANDadmin/admin.html">Admin Login</a>
+                    <a href="../admin/register.html">Admin Register</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Account Services</button>
+                <div class="dropcontent">
+                    <a href="../account-services/account-services.html">Account Services</a>
+                    <a href="../account-services/create.html">Create an Account</a>
+                    <a href="../account-services/myaccount.html">My Account</a>
+                </div>
+            </div>
+                    
+            <div class="dropdown">
+                <button class="dropbutton">About</button>
+                <div class="dropcontent">
+                    <a href="../about/about.html">Apartment History</a>
+                    <a href="../about/location.html">Location</a>
+                    <a href="../about/services.html">Services We Offer</a>
+                    <a href="../about/developmentteam.html">Development Team</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR-->   
+        <!-- <img class="sidebar" src="assets/site/SIDEBAR.png"
+        alt="sidebar"> -->
+        
+        <h1 class="pgtitle">Home</h1>
+        
+        <div class="slideshow">
+
+            <div class="slidefade">
+                <img src="../assets/tour/atelier1.jpg"
+                alt="atelier1"> 
+                <div class="txt">
+                    <h3>Entry Way</h3>
+                    <p>Our luxury apartments feature an open area at the entrance with lots of natural lighting.</p>
+                </div>
+            </div>
+
+            <div class="slidefade">
+                <img src="../assets/tour/atelier2.jpg"
+                alt="atelier2"> 
+                <div class="txt">
+                    <h3>Studio</h3>
+                    <p>The studio resides above the entry way and has lots of natural lighting.</p>
+                </div>
+            </div>
+
+            <div class="slidefade">
+                <img src="../assets/tour/atelier3.jpg"
+                alt="atelier3">  
+                <div class="txt">
+                    <h3>Bedroom View</h3>
+                    <p>Looking out from the partially enclosed bedroom you are greeted with a view of the surrounding woods.</p>
+                </div>
+            </div>
+
+            <div class="slidefade">
+                <img src="../assets/tour/atelier4.jpg"
+                alt="atelier4"> 
+                <div class="txt">
+                    <h3>Bedroom</h3>
+                    <p>The bedroom has a sunshade seperating it from the rest of the second level and features bamboo paneling.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h2>Welcome to Yoke Apartments!</h2>
+        <p class="hometext">
+            Whether you are interested in renting an apartment from us or are an existing client, this is the place to be! <br/>
+            If you wish to learn more about this complex's history and location, please click over to the <a href="../about.html">About Us</a> Section. <br/>
+            If you have any needs as a current resident you can login or create your account on the <a href="../account-services/account-services.html">Account Services</a> page.
+        </p>
+<!--
+        <ul>
+            <li>File service tickets for repairs </li>
+            <li>File complaints as needed or respond to complaints</li>
+            <li>Check service ticket status</li>
+            <li>Read about the history of this apartment complex!</li>
+        </ul>
+-->
+        <div class = "dailytreats">
+            <img src="../assets/promo/monpastry_rescale.png"
+            alt="specials"
+            width="1280"
+            height="720"
+            id="donut">
+            <p>
+                Stop by the main office Monday through Friday to grab a delicious treat in the mornings! <br/>
+                All you need is your resident ID card!
+            </p>
+        </div>
+        <footer>
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+
+    </body>
+</html>

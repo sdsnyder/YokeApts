@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+    <head>
+        <title>Account Services</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/hayley.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+        <script type = "text/javascript"  src = "../JS/create.js" ></script>
+    </head>
+
+    <body>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+		
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+
+        <!-- 
+            THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+            USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+            <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+         -->           
+        <div class="menuguide">
+            <a href="../indexANDadmin/index.html" class="guidebutton">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbutton">Administration</button>
+                <div class="dropcontent">
+                    <a href="../indexANDadmin/admin.html">Admin Login</a>
+                    <a href="../admin/register.html">Admin Register</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Account Services</button>
+                <div class="dropcontent">
+                    <a href="account-services.html">Account Services</a>
+                    <a href="create.html">Create an Account</a>
+                    <a href="myaccount.html">My Account</a>
+                </div>
+            </div>
+                    
+            <div class="dropdown">
+                <button class="dropbutton">About</button>
+                <div class="dropcontent">
+                    <a href="../about/about.html">Apartment History</a>
+                    <a href="../about/location.html">Location</a>
+                    <a href="../about/services.html">Services We Offer</a>
+                    <a href="../about/developmentteam.html">Development Team</a>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR-->   
+
+        <h1 class="pgtitle">Create an Account</h1>
+        <h2>Please visit Account Services to see the requirements for registering for an account.</h2>
+
+        <div class="crecontainera">
+            <div class="crecontainerb">
+                <form name = "info" id = "create" action="create.php" method="post" >
+                <div class="rw">
+                    <div class="c20">
+                        <label for="AptNum"><b>Apartment </b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="text" id="AptNum" placeholder="Enter your apartment #" name="UnitID" required><br>
+                    </div>
+                    
+                    <div class="c20">
+                        <label for="FName"><b>FirstName</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="text" id="FName" placeholder="Enter your First Name" name="fname" required><br>
+                    </div>
+        
+                    <div class="c20">
+                        <label for="LName"><b>LastName</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="text" id="LName" placeholder="Enter your Last Name" name="lname" required><br>
+                    </div>
+        
+                    <div class="c20">
+                        <label for="usrn"><b>Username</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="text" id="usrn" placeholder="Enter Username" name="username" required><br>
+                    </div>
+        
+                    <div class="c20">
+                        <label for="pswd"><b>Password</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="password" id="pswd" placeholder="Enter Password" name="pswd" required><br>
+                    </div>
+        
+                    <div class="c20">
+                        <label for="pswd"><b>Password</b></label>
+                    </div>
+                    <div class="c80">
+                        <input type="password" id="second" placeholder="Re-enter Password" name="pswd2" required><br>
+                    </div>
+                </div>
+                <br/>
+                <input type="submit" value="Submit" class="loginbutton">
+            </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

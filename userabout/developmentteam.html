@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>About Us</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <!--  <link rel="stylesheet" type="text/css" href="../css/liz.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <a class = "return" href="../indexANDadmin/index.html">Logout</a>
+        <img src="../assets/site/lightmode_logo.png"
+            alt="logo" id="logo">
+		
+		<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+		
+            <!-- 
+                THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+                USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+                <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+            -->
+                <div class="menuguide">
+                    <a href="../indexANDadmin/userindex.html" class="guidebutton">Home</a>
+
+                    <div class="dropdown">
+                        <button class="dropbutton">Service Center</button>
+                        <div class="dropcontent">
+                            <a href="../service-center/service-center.html">Service Home</a>
+                            <a href="../service-center/create.html">Create a Ticket</a>
+                            <a href="../service-center/view.html">View a Ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbutton">Complaints</button>
+                        <div class="dropcontent">
+                            <a href="../complaints/complaints.html">Complaints Home</a>
+                            <a href="../complaints/file.html">File a Complaint</a>
+                            <a href="../complaints/view.php">View Complaints</a>
+                        </div>
+                    </div>
+                    <!-- <a href="about.html" class="guidebutton">About Us</a> -->
+					<div class="dropdown">
+                        <button class="dropbutton">About</button>
+                        <div class="dropcontent">
+                            <a href="about.html">Apartment History</a>
+                            <a href="location.html">Location</a>
+                            <a href="services.html">Services We Offer</a>
+							<a href="developmentteam.html">Development Team</a>
+                        </div>
+                    </div>
+					
+                </div>
+            <!-- END OF NAVIGATION BAR-->   
+        <h1 class="pgtitle">Development Team</h1>
+		
+		
+		<h3>Yoke Apartments is able to offer residents of our apartment complex a simple way to resolve maintenance issues quickly 
+			thanks to the following members of our development team: </h3>
+		
+		<div class="teamstyle">
+		<h3 class="teammembers" > Sebastian Snyder </h3>
+		<p> 
+            Sebastian created the HTML/CSS outline for the general visuals of the website. He also designed the home page and enabled it to link to all other pages of the website. <br />
+            For Deliverable 5, he created the administration login system, along with the forms needed to modify service tickets, resident complaints, or to remove residents who no longer have an active lease 
+        </p>
+		</div>
+		
+		<div class="teamstyle">
+		<h3 class="teammembers"> Hayley Goodloe </h3>
+		<p> 
+            Hayley designed the Account Services section of the website, including the html forms for account creation and login <br />
+            For Deliverable 5, she created the php scripts required to allow interaction with the database for user account creation and login.
+        </p>
+		</div>
+		
+		<div class="teamstyle">
+		<h3 class="teammembers"> Taj Abiwa</h3>
+		<p> 
+            Taj designed the Complaints section of the website and created the forms for residents to file complaints.<br />
+            For Deliverable 5, he created the php scripts required to allow submission of complaints, and a simplified view of the complaints table for users to see. 
+        </p>
+		</div>
+		
+		<div class="teamstyle">
+		<h3 class="teammembers"> Joe Steinman </h3>
+		<p> 
+            Joe designed the Service Ticketing section of the website along with the forms needed for residents to submit a service request or view their ticket history.<br />
+            For Deliverable 5, he created the php scripts required to allow submission of service tickets to the database, and allowing users to request their service ticket history. 
+        </p>
+		</div>
+		
+		<div class="teamstyle">
+		<h3 class="teammembers"> Liz Dernoga </h3>
+		<p> 
+            Liz designed the About section of the website including the pages for providing history about the apartment complex, the 
+			apartment complex's location, a description of the services the website offers to residents, and short biographies about the 
+			development team. <br />
+            For Deliverable 5, she developed the php scripts required for the administration view, including the presentation of the resident, complaints, and service ticket tables. 
+        </p>
+		</div>
+
+        <div class="teamstyle">
+        <h3 class="teammembers"> Team Contributions  </h3>
+        <p> 
+            As a team, we created the SQL table structure required for efficient use of this web application and designed the revitalization of the site's format following <br />
+            the addition of a user login and administration system. 
+        </p>
+        </div>
+		
+
+        <footer>
+            <p>
+                A project for IS 448<br/>
+                not for commercial use.
+            </p>
+        </footer>
+    </body>
+</html>

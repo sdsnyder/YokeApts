@@ -1,0 +1,598 @@
+/* element formatting -------------------------------------------------- */
+body{
+    background-color: #861A22;
+    background-position: center;
+    align-content: center;
+    font-size: 18pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+}
+footer{
+    text-align: right;
+    font-family: monospace;
+    font-size: 10pt;
+    color: white;
+    position: relative;
+    bottom: 0;
+    padding-top: 30px;
+}
+
+
+/* Classes ------------------------------------------------------------- */
+
+/* Places h1 with class "pgtitle" on center with accent background*/
+
+.pgtitle{
+    text-align: center;
+    font-size: 24pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #F4CDD4;
+    color: #861A22;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menuguide{
+	background-color: #861A22;
+    font-size: 20pt;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.guidebutton{ /* Navigation buttons dark mode */
+    width: 300px;
+    background-color: #861A22;
+    color: #F4CDD4;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:25px;
+    font-family: monospace;
+    font-size: 20pt;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    display:inline-block;
+}
+
+.guidebutton:hover{ /* changes navigation button color when hovered over in dark mode */
+    background-color: #F4CDD4;
+    color: #861A22;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.dropdown{ /* positioning for dropdown menus */
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropcontent{ /* reveals menu when hovering with cursor */
+    display:block;
+}
+.dropdown:hover .dropbutton{ /* highlights drop down button underneath cursor*/
+    background-color: white;
+    color:#F4CDD4;
+}
+
+.dropbutton{ /* styling of navigation button with drop down menu in dark mode*/
+    width: 300px;
+    background-color: #861A22;
+    color: #F4CDD4;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:25px;
+    border:none;
+    font-family: monospace;
+    font-size: 20pt;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    display:inline-block;
+}
+.dropcontent{ /* styling of dropdown menu */
+    display: none;
+    position:absolute;
+    background-color:white;
+    color:#861A22;
+    min-width: 300px;
+    z-index: 1;
+    text-decoration: none;
+}
+.dropcontent a{ /* styling of dropdown links */
+    color:#861A22;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.return{ 
+    background-color: #F4CDD4;
+    color: #861A22;
+    padding: 15px; 
+    text-decoration: none;
+    float: right;
+}
+.return:hover{
+    background-color: white;
+    color:#861A22;
+}
+
+.modebutton{ /* Dark mode buttons */
+    background-color:#F4CDD4;
+    color: #861A22;
+    padding: 15px; 
+    text-decoration: none;
+    float: right;
+	cursor: pointer;
+}
+
+.modebutton:hover{ /* changes darkmode button color when hovered over */
+    background-color: white;
+    color:#861A22;
+}
+
+.theme-dark {
+	background-color:#861A22;
+    color: white;
+}
+
+
+
+/* Sebastian.css ------------------------------------------------------------- */
+/* INDEX */
+.slideshow{
+    overflow:hidden;
+    width: 894px;
+    height: 670px;
+    font-size: 0;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.slidefade{
+    width: 894px;
+    height: 670px;
+    animation: move 10s ease-in-out 4s infinite alternate; 
+    display: inline-block;
+}
+.txt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #861A22;
+}
+.slideshow h3{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.slideshow p{
+    text-align: center;
+    font-size: 18px;
+    color:white;
+}
+@keyframes move {
+    0%,20% { transform: translateX(0); }
+    30%,45% { transform: translateX(-889px); }
+    55%,70% { transform: translateX(-1788px); }
+    80%,100% { transform: translateX(-2667px); }
+}
+h2{
+    text-align: center;
+}
+.hometext{
+    text-align: center;
+    text-decoration: none;
+}
+.hometext a{
+    text-decoration: none;
+    color:white;
+}
+.dailytreats{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    height:100%;
+}
+
+/* ADMINISTRATION */
+
+/* Places login page at center of page with border*/
+.admina{
+    border: #F4CDD4 solid 3px;
+    padding: 15px 15px 15px 15px;
+    display:table;
+    height:100%;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 14pt;
+}
+.adminb{
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+}
+
+/* Sets position of button*/
+.loginbutton{
+    background-color:#F4CDD4;
+    color: #861A22;
+    border-radius: 3px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom:2%;
+    margin-left: 80%;
+    border: none;
+}
+.loginbutton:hover{
+    background-color: white;
+    color:#861A22;
+}
+
+.adminlogin{
+    padding-top: 80px;
+    text-align: center;
+    text-decoration: none;
+    color:#F4CDD4;
+}
+
+
+/* resolution CSS */
+.containa{
+    border: 5px solid #F4CDD4;
+    padding: 30px;
+    display:table;
+    height:100%;
+    width: 400px;
+    margin: 0 auto;
+}
+.containb{
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+}
+.containc{
+    float:right;
+    clear:left;
+}
+.f1{
+    background-color: #F4CDD4;
+    color: #861A22;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+.f1:hover{
+    background-color: white;
+    color:#861A22;
+    border:white 1px solid;
+  }
+  #servtickets{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#servtickets td, #servtickets th {
+    border: 1px solid #861A22;
+    padding: 8px;
+}
+#servtickets tr{
+    background-color: #F4CDD4;
+}
+#servtickets tr:hover {
+    background-color: white;
+}
+#servtickets th { /*Headers*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F4CDD4;
+    color: #861A22;
+  }
+
+  #comps{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  #comps td, #comps th {
+    border: 1px solid #861A22;
+    padding: 8px;
+}
+  #comps tr{
+    background-color: #F4CDD4;
+}
+  #comps tr:hover {
+    background-color: white;
+}
+  #comps th { /*Headers*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F4CDD4;
+    color: #861A22;
+  }
+
+.adminreg{
+    text-align: center;
+    padding:10px;
+    text-decoration: none;
+    background-color: #861A22;
+    color:white;
+    margin-left: 48%;
+}
+.adminreg:hover{
+    color:#861A22;
+    background-color: white;
+}
+
+
+
+/* Liz.css ------------------------------------------------------------- */
+.address a{ /* styling of address link */
+    text-decoration: underline #F4CDD4;
+    font-size: 20pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #F4CDD4;
+}
+.complexview{
+    overflow:hidden;
+    width: 894px;
+    height: 670px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.serviceslist ul{ /* styling of services list */
+	padding-left: 10px;
+}
+
+.teammembers h3{ /* styling of development team member names */
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.teamstyle {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.locationspacing {
+	padding-bottom: 5px;
+}
+
+/*location page*/
+.location{
+    display: block;
+	margin: 0 auto;
+	margin-top: -70px;
+	margin-bottom: -120px;
+}
+
+.locationtext {
+	text-align: center;
+}
+
+
+
+/* Joe.css ------------------------------------------------------------- */
+.bottomborder{
+	border-bottom: 2px solid #F4CDD4;
+	padding-bottom: 10px;
+}
+
+.centerBox{
+  box-sizing: border-box;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #F4CDD4;
+  padding: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #F4CDD4;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.labeljoe{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #F4CDD4;
+  color: #861A22;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #861A22;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+
+
+/* Taj.css ------------------------------------------------------------- */
+.page-prompt{  /*Login prompt for Administration to view complains*/
+  text-align: center;
+}
+
+.login-button{  /*Login after entering valid name, email, id*/
+  font-size: 13pt;
+  font-weight: bold;
+  width: 125px;
+  height: 40px;
+  background-color: #F4CDD4;
+  color: #861A22;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  color: white;
+  opacity: 0.8;
+}
+
+/*Login form labels*/
+.input-name{
+  width:195px;
+}
+
+.input-email{
+  width:195px;
+}
+
+.label-complaint-box{
+  text-align: right;
+}
+input[type=submit] {
+  background-color: #F4CDD4;
+  color: #861A22;
+  padding: 5px;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: #861A22;
+}
+
+
+#inbox { /*Tabular styling for inbox*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#inbox td, #inbox th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#inbox tr{
+  background-color: #FFFFFF;
+}
+
+#inbox tr:hover {
+  background-color: #E5E5E5;
+}
+
+#inbox th { /*Headers*/
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #F4CDD4;
+  color: #861A22;
+}
+.complainta{
+  border: 5px solid #F4CDD4;
+  padding: 30px;
+  display:table;
+  height:100%;
+  width: 800px;
+  margin: 0 auto;
+}
+.complaintb{
+  display: table-cell;
+  vertical-align: middle;
+  margin:0 auto;
+}
+.complaintbut{
+  float:right;
+  clear:left;
+  font-size: 16px;
+  padding: 24px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color:#F4CDD4;
+  color:#861A22;
+}
+.complaintbut:hover{
+  background-color: white;
+  color:#861A22;
+}
+
+
+
+/* Hayley.css ------------------------------------------------------------- */
+img.avatar { 
+  position: relative;
+  width:40px;
+  height:40px;
+  }
+  
+  img.donut{
+  position: absolute;
+  right: 35%;
+  width:400px;
+  height:400px;
+  }
+  
+input[type=submit]:hover {
+  background-color: white;
+  color: #861A22;
+  }
+  
+  .crecontainera{
+      border: #F4CDD4 solid 3px;
+      padding: 15px 15px 15px 15px;
+      display:table;
+      height:100%;
+      width: 500px;
+      margin: 0 auto;
+      font-size: 14pt;
+  }
+  .crecontainerb{
+      display: table-cell;
+      vertical-align: middle;
+      margin:0 auto;
+  }
+  img.avatar { float: right; 
+    width:40px;
+    height:40px;
+  }
+  
+  input[type=submit] {
+    background-color: #F4CDD4;
+    color: #861A22;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  input[type=submit]:hover {
+    background-color: white;
+    color: #861A22;
+  }
+  .c20{
+    float:left;
+    width: 25%;
+  }
+  .c80{
+    float:left;
+    width: 75%;
+    }
+  .rw:after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+  
+  .text{
+      text-align: center;
+      margin-bottom: -50px; 
+  }
+  
+  

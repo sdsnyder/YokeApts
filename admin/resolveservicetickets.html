@@ -1,0 +1,77 @@
+<!--
+  Yoke Atelier
+  IS 448 Section 3
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Ticket Resolution</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/sebastian.css" title="style" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/light-theme.css" title="style" id="theme"/>
+		<script type = "text/javascript" src= "../JS/modeSwitch.js"> </script>
+    </head>
+
+    <body>
+        <a class = "return" href="../indexANDadmin/index.html">Logout</a>
+        <img src="../assets/site/lightmode_logo.png"
+        alt="logo" id="logo">
+	
+	<button class="modebutton" id="modeswitch" >Dark/Light Mode</button>
+
+    <!-- 
+    THIS IS THE NAVIGATION BAR, IF YOU FIND THAT YOU NEED TO ADD ANOTHER CHILD PAGE;
+    USE THIS WITHIN YOUR RESPECTIVE 'DROPCONTENT' DIV CLASS; 
+    <a href="your/directory/path">the name you want to see on the dropdown menu</a>
+    -->           
+        <div class="menuguide">
+
+            <div class="dropdown">
+                <button class="dropbutton">Services</button>
+                <div class="dropcontent">
+                    <a href="viewtickethistory.php">View Tickets</a>
+                    <a href="resolveservicetickets.html ">Resolve Tickets</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Complaints</button>
+                <div class="dropcontent">
+                    <a href="viewcomplaints.php">View Complaints</a>
+                    <a href="resolvecomplaints.html">Resolve Complaints</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton">Residents</button>
+                <div class="dropcontent">
+                    <a href="viewresidents.php">Active Residents</a>
+                    <a href="terminate.html">Terminate Resident</a>
+                </div>
+            </div>
+        </div>
+<!-- END OF NAVIGATION BAR-->   
+
+        <!--RESOLUTION FORM-->
+        <div class= "containa">
+            <div class="containb">
+                <form action="ticketres.php" method="POST">
+                    <label>TicketID:<br /><input type="text" name="tID"/></label><br />
+                    <label>Resolution Status:<br /></label>
+                        <input type="radio" id="resolved" name="choice2" value="yes">
+                            <label for="resolved">Resolved</label>
+                        <input type="radio" id="neg" name="choice2" value="no">
+                            <label for="neg">Active Issue</label><br />
+                </p>
+                    <div class="containc">
+                        <input class="f1" type="submit" value="Submit Change"/>
+                        <input class="f1" type="reset" value="Reset Form"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
