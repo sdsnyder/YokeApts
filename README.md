@@ -1,4 +1,4 @@
-#Yoke Apartments
+# Yoke Apartments
     This web application was created in collaboration with a group for a web development class, my individual contributions are described below. 
 
 #### HTML: 
